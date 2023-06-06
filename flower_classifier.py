@@ -59,17 +59,17 @@ for image_batch, labels_batch in train_ds:
 
 #create model
 
-model = Sequential()
-model.add(Rescaling(1./255))
-model.add(Conv2D(32,3, activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Conv2D(32,3, activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Conv2D(32,3, activation='relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Flatten())
-model.add(Dense(units=128, activation='relu'))
-model.add(Dense(num_classes, activation='softmax'))
+# model = Sequential()
+# model.add(Rescaling(1./255))
+# model.add(Conv2D(32,3, activation='relu'))
+# model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Conv2D(32,3, activation='relu'))
+# model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Conv2D(32,3, activation='relu'))
+# model.add(MaxPooling2D(pool_size=(2, 2)))
+# model.add(Flatten())
+# model.add(Dense(units=128, activation='relu'))
+# model.add(Dense(num_classes, activation='softmax'))
 
 
 num_classes = 5
@@ -80,23 +80,23 @@ hidden_units = 128  # @param
 dropout_rate = 0.2  # @param
 learning_rate = 0.01 # @param
 
-# model = tf.keras.Sequential([
-#   tf.keras.Input(shape=(image_height, image_width, 3)),
-#   layers.experimental.preprocessing.Rescaling(1./255),
-#   layers.experimental.preprocessing.RandomFlip('horizontal'),
-#   layers.experimental.preprocessing.Rescaling(1./127.5, offset=-1),
-#   layers.Conv2D(filters, kernel_size, strides, padding='same', activation='relu'),
-#   layers.MaxPooling2D(pool_size=[2, 2], strides=2),
-#   layers.Conv2D(2 * filters, kernel_size, strides, padding='same', activation='relu'),
-#   layers.MaxPooling2D(pool_size=[2, 2], strides=2),
-#   layers.Conv2D(4 * filters, kernel_size, strides, padding='same', activation='relu'),
-#   layers.Conv2D(4 * filters, kernel_size, strides, padding='same', activation='relu'),
-#   layers.MaxPooling2D(pool_size=[2, 2], strides=2),
-#   layers.Flatten(),
-#   layers.Dropout(rate=dropout_rate),
-#   layers.Dense(hidden_units, activation='relu'),
-#   layers.Dense(num_classes, activation='softmax')
-# ])
+model = tf.keras.Sequential([
+  tf.keras.Input(shape=(image_height, image_width, 3)),
+  layers.experimental.preprocessing.Rescaling(1./255),
+  layers.experimental.preprocessing.RandomFlip('horizontal'),
+  layers.experimental.preprocessing.Rescaling(1./127.5, offset=-1),
+  layers.Conv2D(filters, kernel_size, strides, padding='same', activation='relu'),
+  layers.MaxPooling2D(pool_size=[2, 2], strides=2),
+  layers.Conv2D(2 * filters, kernel_size, strides, padding='same', activation='relu'),
+  layers.MaxPooling2D(pool_size=[2, 2], strides=2),
+  layers.Conv2D(4 * filters, kernel_size, strides, padding='same', activation='relu'),
+  layers.Conv2D(4 * filters, kernel_size, strides, padding='same', activation='relu'),
+  layers.MaxPooling2D(pool_size=[2, 2], strides=2),
+  layers.Flatten(),
+  layers.Dropout(rate=dropout_rate),
+  layers.Dense(hidden_units, activation='relu'),
+  layers.Dense(num_classes, activation='softmax')
+])
 
 
 model.compile(loss='binary_crossentropy', optimizer='adam',metrics=['accuracy'])
