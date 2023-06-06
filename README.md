@@ -1,6 +1,6 @@
 # Flower Classifier
 
-The Flower Classifier is a machine learning model designed to classify pictures of flowers into five main classes: daisy, dandelion, roses, sunflowers, and tulips. This README file provides an overview of the model, its usage, and important information for developers and users.
+The Flower Classifier is a machine learning model designed to classify pictures of flowers into five main classes: daisy, dandelion, roses, sunflowers, and tulips. This README file provides an overview of the model, its usage, and important information for developers and users. In this, I tried experimenting with the swish activation function and playing around with the model's hyperparameters.
 
 ## Model Overview
 
@@ -8,7 +8,7 @@ The Flower Classifier model is built using deep learning techniques and trained 
 
 ## Dataset
 
-The model was trained on a diverse dataset that contains images of flowers belonging to the five main classes: daisy, dandelion, roses, sunflowers, and tulips. The dataset is carefully curated to ensure a balanced representation of each class, enabling the model to learn effectively. The training, validation, and testing sets were split to evaluate the performance of the model accurately.
+The model was trained on a diverse dataset that contains images of flowers belonging to the five main classes: daisy, dandelion, roses, sunflowers, and tulips. The training, validation, and testing sets were split to evaluate the performance of the model accurately.
 
 ## Usage
 
@@ -57,10 +57,7 @@ The model's performance can be evaluated using various metrics such as accuracy,
 
 The reported performance metrics of the Flower Classifier model are as follows:
 
-- Accuracy: 0.85
-- Precision: 0.86
-- Recall: 0.84
-- F1-score: 0.85
+- Accuracy: 0.76
 
 Please note that these metrics are indicative of the model's performance on the test set during evaluation. The actual performance may vary depending on the quality and diversity of the input images.
 
