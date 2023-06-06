@@ -8,7 +8,7 @@ The Flower Classifier model is built using deep learning techniques and trained 
 
 ## Dataset
 
-The model was trained on a diverse dataset that contains images of flowers belonging to the five main classes: daisy, dandelion, roses, sunflowers, and tulips. The training, validation, and testing sets were split to evaluate the performance of the model accurately.
+The model was trained on a diverse dataset I obtained from Kaagle that contains images of flowers belonging to the five main classes: daisy, dandelion, roses, sunflowers, and tulips. The training, validation, and testing sets were split to evaluate the performance of the model accurately.
 
 ## Usage
 
@@ -57,12 +57,10 @@ The model's performance can be evaluated using various metrics such as accuracy,
 
 The reported performance metrics of the Flower Classifier model are as follows:
 
-- Accuracy: 0.76
+- Accuracy: 0.75
 
 Please note that these metrics are indicative of the model's performance on the test set during evaluation. The actual performance may vary depending on the quality and diversity of the input images.
 
 ## Conclusion
 
-The Flower Classifier model is an effective tool for automatically classifying flower
-
- images into five main classes: daisy, dandelion, roses, sunflowers, and tulips. By following the usage instructions outlined in this README, developers can easily incorporate the model into their applications or further improve it by fine-tuning on additional data. Happy classifying!
+The Flower Classifier model is an effective tool for automatically classifying flower images into the five main classes: daisy, dandelion, roses, sunflowers, and tulips. By following the usage instructions outlined in this README, developers can easily incorporate the model into their applications or further improve it by fine-tuning on additional data. Happy classifying!
