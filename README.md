@@ -4,7 +4,7 @@ The Flower Classifier is a machine learning model designed to classify pictures 
 
 ## Model Overview
 
-The Flower Classifier model is built using deep learning techniques and trained on a dataset consisting of labeled flower images. It leverages the power of convolutional neural networks (CNNs) to learn and extract meaningful features from the input images. The model architecture is designed to capture the unique characteristics and patterns specific to each flower class.
+The Flower Classifier model is built using deep learning techniques and trained on a dataset consisting of labeled flower images. It leverages the power of convolutional neural networks (CNNs) to learn and extract meaningful features from the input images. The model architecture is designed to capture the unique characteristics and patterns specific to each flower class, by modifying the MobileNetV2 model and using transfer learning techniques to adapt it to capture the flower features.
 
 ## Dataset
 
