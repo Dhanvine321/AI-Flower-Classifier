@@ -49,7 +49,8 @@ predicted_label = class_labels[predicted_class]
 print('Predicted flower class:', predicted_label)
 ```
 
-Ensure that you have the model file (`flower_classifier_model.h5`) and the flower image file (`flower_image.jpg`) available in the appropriate paths.
+Ensure that you have the model file (`improved_flower_classifier_model.h5`) and the flower image file (`flower_image.jpg`) available in the appropriate paths.
+UPDATE: Now there is a UI(web app with not so cool design lol) that you can upload your picture and using Flask API it can run it on model and output the flower's class.
 
 ## Model Performance
 
@@ -57,7 +58,7 @@ The model's performance can be evaluated using various metrics such as accuracy,
 
 The reported performance metrics of the Flower Classifier model are as follows:
 
-- Accuracy: 0.75
+- Accuracy: 88.6%
 
 Please note that these metrics are indicative of the model's performance on the test set during evaluation. The actual performance may vary depending on the quality and diversity of the input images.
 
