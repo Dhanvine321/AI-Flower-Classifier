@@ -1,6 +1,6 @@
 # Flower Classifier
 
-The Flower Classifier is a machine learning model designed to classify pictures of flowers into five main classes: daisy, dandelion, roses, sunflowers, and tulips. This README file provides an overview of the model, its usage, and important information for developers and users. In this, I tried experimenting with the swish activation function and playing around with the model's hyperparameters.
+The Flower Classifier is a AI Web App(simplified and design not completed) designed to classify pictures of flowers into five main classes: daisy, dandelion, roses, sunflowers, and tulips. This README file provides an overview of the model, its usage, and important information for developers and users. In this, I tried experimenting with the swish activation function and playing around with the model's hyperparameters before experimenting with Transfer Learning.
 
 ## Model Overview
 
